@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <!--
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -18,12 +16,49 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
+  <title>React App</title>
+</head>
+
+<body class="app">
+  <!-- <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div> -->
+  <div class="left-part">
+    <div class="logo">
+      <a href="index.html">
+        <img src="./img/Spotify-logo.png" alt="Лого" width="130px">
+      </a>
+    </div>
+    <nav class="navigation">
+      <a href="#" class="navigation__item">Главная</a>
+      <a href="#" class="navigation__item">Поиск</a>
+      <a href="#" class="navigation__item">Моя медиатека</a>
+    </nav>
+  </div>
+
+  <div class="right-part">
+    <div class="header-right-part">
+      <div class="nav">
+        <div class="arrow">
+          <img src="./img/arrow-removebg-preview.png" alt="" width="32px">
+        </div>
+        <div class="arrow">
+          <img class="arrow-reverse" src="./img/arrow-removebg-preview.png" alt="" width="32px">
+        </div>
+      </div>
+      <div class="search">
+        <!-- <img src="./img/search.png" alt="" width="32px"> -->
+        <input type="search" value="Исполнитель, трек или подкаст">
+
+      </div>
+      <div class="profile">
+        <div class="photo-profile">
+          <img src="./img/profile-removebg-preview.png" alt="" height="50px">
+        </div>
+        <p class="profile__name">Pavel</p>
+      </div>
+    </div>
+  </div>
+  <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -33,5 +68,22 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+  <!-- <div class="top-bar">
+      <div class="buttons">
+        <button class="button"></button>
+        <button class="button"></button>
+      </div>
+      <div class="top-bar-content">
+
+      </div>
+      <div class="top-bar-info">
+
+      </div>
+    </div>
+    <nav class="nav-bar">
+    </nav>
+  </div> -->
+
+</body>
+
 </html>
